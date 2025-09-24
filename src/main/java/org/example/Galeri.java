@@ -146,7 +146,6 @@ public class Galeri {
                 System.out.println("Araba Seri:"+arabaSeri.size());
                 System.out.println("Vites Tipi:"+arabaVitesTipi.size());
                 System.out.println("Yakıt Tipi:"+ arabaYakıtTipi.size());
-                System.out.println("Araba Resimleri:"+arabaResimleri.size());
             }
             else if (secim==2){
 
