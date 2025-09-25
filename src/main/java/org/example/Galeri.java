@@ -136,7 +136,7 @@ public class Galeri {
                             arabaKasaTipi.add(element2.text());// element1.text in valuesi yani ismi
                             System.out.println("Kasa Tipi:" + element2.text() + " " + "Link:" + ilanMarka);
                         }
-                        Elements img = doc.getElementsByTag("img");
+                  /*      Elements img = doc.getElementsByTag("img");
                         for (Element el : img) {
                             String src = el.hasAttr("data-src") ? el.absUrl("data-src") : el.absUrl("src");
                            String alt = el.attr("alt");
@@ -144,7 +144,7 @@ public class Galeri {
                             System.out.println("Resim: " + src+ilanMarka);
                            //System.out.println("Alt: " + alt);
 
-                            arabaResimleri.add(src);
+                            arabaResimleri.add(src);*/
                         }
 
                     }
@@ -157,7 +157,7 @@ public class Galeri {
                 System.out.println("Araba Seri:"+arabaSeri.size());
                 System.out.println("Vites Tipi:"+arabaVitesTipi.size());
                 System.out.println("Yakıt Tipi:"+ arabaYakıtTipi.size());
-                System.out.println("Araba Resimleri"+arabaResimleri);
+                //System.out.println("Araba Resimleri"+arabaResimleri);
             }
             else if (secim==2){
             }
