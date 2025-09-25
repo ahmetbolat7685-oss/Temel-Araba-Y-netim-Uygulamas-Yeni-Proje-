@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Galeri {
-    public static void main(String[] args)  throws  Exception {
+    public static void main(String[] args) throws Exception {
 
         ArrayList<Araba> mevcutArabalar = new ArrayList<>(); // Araba classında mevcutArabalar değişkeni tutan bir ArrayList dizisidir
 
@@ -100,6 +100,7 @@ public class Galeri {
                         if (element1 != null && element1.text().equals("Marka")) {// element1 yani div.property-key  element 1 boş değilse şart doğruysa element1t.text yani yazılı ismi "Markaya eşitse " arbaModel
                             arabaMarka.add(element2.text()); //arabaMarkaya arabanın ismini ekle
                             System.out.println("Marka: " + element2.text() + " " + " Link: " + ilanMarka);// element2 yani araba ismi ve ilanMarkayı Yazdır
+                            System.out.println("Marka: " + element2.text() + " " + " Link: " + ilanMarka);// element2 yani araba ismi ve ilanMarkayı Yazdır
                         }
 
                         if (element1 != null && element1.text().equals("Model")) {
@@ -145,23 +146,25 @@ public class Galeri {
                            //System.out.println("Alt: " + alt);
 
                             arabaResimleri.add(src);*/
-                        }
-
                     }
+
                 }
-                System.out.println("Araba Linkleri"+arabaLink.size());
-                System.out.println("Araba Markaları"+arabaMarka.size());
-                System.out.println("Araba Modelleri"+arabaModel.size());
-                System.out.println("Araba Yıl :"+arabaYil.size());
-                System.out.println("Araba Kilometre:"+arabaKilometre.size());
-                System.out.println("Araba Seri:"+arabaSeri.size());
-                System.out.println("Vites Tipi:"+arabaVitesTipi.size());
-                System.out.println("Yakıt Tipi:"+ arabaYakıtTipi.size());
+                System.out.println("Araba Linkleri" + arabaLink.size());
+                System.out.println("Araba Markaları" + arabaMarka.size());
+                System.out.println("Araba Modelleri" + arabaModel.size());
+                System.out.println("Araba Yıl :" + arabaYil.size());
+                System.out.println("Araba Kilometre:" + arabaKilometre.size());
+                System.out.println("Araba Seri:" + arabaSeri.size());
+                System.out.println("Vites Tipi:" + arabaVitesTipi.size());
+                System.out.println("Yakıt Tipi:" + arabaYakıtTipi.size());
                 //System.out.println("Araba Resimleri"+arabaResimleri);
             }
-            else if (secim==2){
-            }
 
+
+
+            else if (secim == 2) {
+                System.out.println("ds");
+            }
             else if (secim == 3) { // Fiyata göre Arabalar Filtrelendi
 
                 System.out.print("Fiyat Giriniz:");
@@ -177,7 +180,7 @@ public class Galeri {
                     System.out.println("Bu Fiyata Uygun Araç Bulunamadı");
                 }
 
-            } else if (secim == 3) {// Markaya Göre Aranıyor
+            } else if (secim == 4) {// Markaya Göre Aranıyor
 
                 System.out.print("Markaya Göre Ara:");
                 String marka = scanner.nextLine();
@@ -191,7 +194,7 @@ public class Galeri {
                 if (!sonuc) { // marka ismi yanlış girildiyse de bulundu eşit değildir
                     System.out.println("Lütfen  Aracın Marka Bilgisini Doğru Giriniz");
                 }
-            } else if (secim == 4) {
+            } else if (secim == 5) {
 
                 System.out.println("Eklemek İstediğiniz Arabanın Bilgilerini Giriniz");
 
@@ -216,7 +219,7 @@ public class Galeri {
 
                 System.out.println("Araba Başarılı Bİr Şekilde Eklenmiştir");
                 System.out.println(id + " " + marka + " " + model + " " + yil + " " + fiyat);
-            } else if (secim == 5) {
+            } else if (secim == 6) {
 
                 System.out.print("Fiyat Giriniz:");
                 double fiyat = scanner.nextDouble();
@@ -235,7 +238,7 @@ public class Galeri {
                 if (!sonuc) {
                     System.out.println("Lütfen Aracın Fiyatını ve Marka Bilgilerini Doğru Giriniz!!  ");
                 }
-            } else if (secim == 6)// Arabayı Satın Al
+            } else if (secim == 7)// Arabayı Satın Al
             {
                 System.out.print("Satın almak istediğiniz araba ID:");
                 int id = scanner.nextInt();
@@ -271,12 +274,12 @@ public class Galeri {
                     System.out.println("Satış Gerçekleşmedi"); // MevcutArabalar listesindeki id ler birden fazla satışı yapılacağı zaman Satış Gerçekleşmeyecek sonuca eşit değil çnkü
                 }
 
-            } else if (secim == 7) { //  satiskayitlari string olduğu için string tipinde diziyi saklıyor
+            } else if (secim == 8) { //  satiskayitlari string olduğu için string tipinde diziyi saklıyor
                 System.out.println("----SATIŞLAR----");
                 for (String s : satisKayitlari) {
                     System.out.println(s);
                 }
-            } else if (secim == 8) {
+            } else if (secim == 9) {
                 System.out.println("Sistemden Çıkış Yapıldı");
                 sonuc = false;
                 break;
