@@ -100,7 +100,7 @@ public class Galeri {
                         if (element1 != null && element1.text().equals("Marka")) {// element1 yani div.property-key  element 1 boş değilse şart doğruysa element1t.text yani yazılı ismi "Markaya eşitse " arbaModel
                             arabaMarka.add(element2.text()); //arabaMarkaya arabanın ismini ekle
                             System.out.println("Marka: " + element2.text() + " " + " Link: " + ilanMarka);// element2 yani araba ismi ve ilanMarkayı Yazdır
-                            System.out.println("Marka: " + element2.text() + " " + " Link: " + ilanMarka);// element2 yani araba ismi ve ilanMarkayı Yazdır
+
                         }
 
                         if (element1 != null && element1.text().equals("Model")) {
