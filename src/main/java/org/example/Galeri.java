@@ -25,12 +25,12 @@ public class Galeri {
         ArrayList<String> arabaResimleri = new ArrayList<>();
 
 
-        mevcutArabalar.add(new Araba(1, "Toyota", "Corolla", 2020, 20000)); // add = eklemek anlamına gelir
+       /* mevcutArabalar.add(new Araba(1, "Toyota", "Corolla", 2020, 20000)); // add = eklemek anlamına gelir
         mevcutArabalar.add(new Araba(2, "Skoda", "Wolswogen", 2010, 30000));
         mevcutArabalar.add(new Araba(3, "Renault", "Clio", 2025, 40000));
         mevcutArabalar.add(new Araba(4, "Wolswogen", "Jetta", 2023, 50000));
         mevcutArabalar.add(new Araba(5, "Renault", "Toros", 2024, 60000));
-
+*/
 
         ArrayList<String> satisKayitlari = new ArrayList<>(); // String tipinde tutan ve değerleri satisKayitlarına atanan bir String ArrayList dizisi
 
@@ -137,33 +137,37 @@ public class Galeri {
                             arabaKasaTipi.add(element2.text());// element1.text in valuesi yani ismi
                             System.out.println("Kasa Tipi:" + element2.text() + " " + "Link:" + ilanMarka);
                         }
-                  /*      Elements img = doc.getElementsByTag("img");
+
+                      //1  System.out.println("-------------------");
+
+                     /*   Elements img = doc.getElementsByTag("img");
                         for (Element el : img) {
                             String src = el.hasAttr("data-src") ? el.absUrl("data-src") : el.absUrl("src");
-                           String alt = el.attr("alt");
+                            String alt = el.attr("alt");
 
-                            System.out.println("Resim: " + src+ilanMarka);
-                           //System.out.println("Alt: " + alt);
+                            System.out.println("Resim: " + src + ilanMarka);
+                            //System.out.println("Alt: " + alt);
 
                             arabaResimleri.add(src);*/
-                    }
+                        }
+                    System.out.println("-----------------");
 
+                    }
+                    System.out.println("Araba Linkleri" + arabaLink.size());
+                    System.out.println("Araba Markaları" + arabaMarka.size());
+                    System.out.println("Araba Modelleri" + arabaModel.size());
+                    System.out.println("Araba Yıl :" + arabaYil.size());
+                    System.out.println("Araba Kilometre:" + arabaKilometre.size());
+                    System.out.println("Araba Seri:" + arabaSeri.size());
+                    System.out.println("Vites Tipi:" + arabaVitesTipi.size());
+                    System.out.println("Yakıt Tipi:" + arabaYakıtTipi.size());
+                    //System.out.println("Araba Resimleri"+arabaResimleri);
                 }
-                System.out.println("Araba Linkleri" + arabaLink.size());
-                System.out.println("Araba Markaları" + arabaMarka.size());
-                System.out.println("Araba Modelleri" + arabaModel.size());
-                System.out.println("Araba Yıl :" + arabaYil.size());
-                System.out.println("Araba Kilometre:" + arabaKilometre.size());
-                System.out.println("Araba Seri:" + arabaSeri.size());
-                System.out.println("Vites Tipi:" + arabaVitesTipi.size());
-                System.out.println("Yakıt Tipi:" + arabaYakıtTipi.size());
-                //System.out.println("Araba Resimleri"+arabaResimleri);
-            }
 
 
 
             else if (secim == 2) {
-                System.out.println("ds");
+
             }
             else if (secim == 3) { // Fiyata göre Arabalar Filtrelendi
 
